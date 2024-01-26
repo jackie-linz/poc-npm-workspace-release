@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.1](https://github.com/jackie-linz/poc-npm-workspace-release/compare/test1-v0.5.0...test1-v0.5.1) (2024-01-26)
+
+
+### Bug Fixes
+
+* test1 ([6d0134e](https://github.com/jackie-linz/poc-npm-workspace-release/commit/6d0134ed8fab758564abca990772d878019e9c27))
+
 ## [0.5.0](https://github.com/jackie-linz/poc-npm-workspace-release/compare/test1-v0.4.0...test1-v0.5.0) (2024-01-26)
 
 
