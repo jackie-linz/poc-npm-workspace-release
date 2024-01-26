@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0](https://github.com/jackie-linz/poc-npm-workspace-release/compare/test1-v0.1.0...test1-v0.2.0) (2024-01-26)
+
+
+### Features
+
+* added index.js to test1 ([125b29f](https://github.com/jackie-linz/poc-npm-workspace-release/commit/125b29ff54b56b723f5cb39f5aaa03a9b0d6414b))
+
 ## [0.1.0](https://github.com/jackie-linz/poc-npm-workspace-release/compare/test1-v0.0.1...test1-v0.1.0) (2024-01-26)
 
 
