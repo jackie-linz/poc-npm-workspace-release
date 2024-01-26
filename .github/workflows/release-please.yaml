@@ -15,6 +15,7 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           include-component-in-tag: true
+      - run: echo '${{toJSON(steps.release.outputs)}}'
 
       - uses: actions/checkout@v4
         if: ${{ steps.release.outputs.releases_created }}
