@@ -1,5 +1,4 @@
 {
-  ".": "0.0.0",
   "packages/test1": "0.0.1",
   "packages/test2": "0.1.0"
 }
