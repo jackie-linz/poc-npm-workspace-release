@@ -29,7 +29,7 @@ jobs:
         if: ${{ steps.release.outputs.releases_created == 'true' }}
       - run: |
           echo "$PACKAGES"
-          echo "$PACKAGES" | jq -c 'fromjson | .[]' | npm publish -w
+          echo "$PACKAGES" | jq -c 'fromjson | .[]' | xargs npm publish -w
         env:
           PACKAGES: ${{toJSON(steps.release.outputs.paths_released)}}
         if: ${{ steps.release.outputs.releases_created == 'true' }}
