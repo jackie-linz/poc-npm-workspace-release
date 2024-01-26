@@ -15,7 +15,23 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           include-component-in-tag: true
-      - run: echo '${{toJSON(steps.release.outputs)}}'
+
+      - uses: actions/checkout@v4
+        if: ${{ steps.release.outputs.releases_created }}
+      - uses: actions/setup-node@v4
+        with:
+          cache: "npm"
+          node-version: 18
+        if: ${{ steps.release.outputs.releases_created }}
+
+      - run: npm ci
+        if: ${{ steps.release.outputs.releases_created }}
+      - run: |
+          echo "$PACKAGES"
+          echo "$PACKAGES" | jq -c '.[]' | npm publish -w
+        env:
+          PACKAGES: ${{toJSON(steps.release.outputs.paths_released)}}
+        if: ${{ steps.release.outputs.releases_created }}
       # - uses: actions/checkout@v2
       #   if: ${{ steps.release.outputs.releases_created }}
       # - uses: actions/setup-node@v2
