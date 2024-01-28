@@ -2,13 +2,13 @@ on:
   push:
     branches:
       - main
-permissions:
-  contents: write
-  pull-requests: write
 name: release-please
 jobs:
   release-please:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
     outputs:
       releases_created: ${{ steps.release.outputs.releases_created }}
       paths_released: ${{ steps.release.outputs.paths_released }}
@@ -22,6 +22,9 @@ jobs:
 
   publish:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
     needs: release-please
     if: ${{ needs.release-please.outputs.releases_created == 'true' }}
     steps:
