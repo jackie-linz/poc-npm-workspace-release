@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.9.2](https://github.com/jackie-linz/poc-npm-workspace-release/compare/test1-v0.9.1...test1-v0.9.2) (2024-01-28)
+
+
+### Bug Fixes
+
+* missing file ([150a99c](https://github.com/jackie-linz/poc-npm-workspace-release/commit/150a99c59798decf0f8655f582aa48eca406c56a))
+* simplify config ([083a0f4](https://github.com/jackie-linz/poc-npm-workspace-release/commit/083a0f4d32d48120746dc8f35b1c3320c7f956f2))
+
 ## [0.9.1](https://github.com/jackie-linz/poc-npm-workspace-release/compare/test1-v0.9.0...test1-v0.9.1) (2024-01-28)
 
 
