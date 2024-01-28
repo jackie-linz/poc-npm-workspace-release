@@ -35,8 +35,11 @@ jobs:
       - run: npm ci
       - run: |
           echo "$PACKAGES"
-          echo "$PACKAGES" | jq -c 'fromjson | .[]' | xargs npm run build -w
-          echo "$PACKAGES" | jq -c 'fromjson | .[]' | xargs npm publish -w
+          echo "$PACKAGES" | jq -c 'fromjson | .[]' | \
+          while read -r package; do
+            npm run build -w $package
+            npm publish -w $package
+          done
         env:
           PACKAGES: ${{ toJSON(needs.release-please.outputs.paths_released) }}
           NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
