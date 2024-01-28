@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.9.3](https://github.com/jackie-linz/poc-npm-workspace-release/compare/test1-v0.9.2...test1-v0.9.3) (2024-01-28)
+
+
+### Bug Fixes
+
+* deleted unused file ([bf8f56b](https://github.com/jackie-linz/poc-npm-workspace-release/commit/bf8f56b6fef5769d19e3508d191a0c3c92194aa8))
+
 ## [0.9.2](https://github.com/jackie-linz/poc-npm-workspace-release/compare/test1-v0.9.1...test1-v0.9.2) (2024-01-28)
 
 
