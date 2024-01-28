@@ -17,6 +17,7 @@ jobs:
         id: release
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          release-type: node
           include-component-in-tag: true
       - run: echo '${{toJSON(steps.release.outputs)}}'
 
