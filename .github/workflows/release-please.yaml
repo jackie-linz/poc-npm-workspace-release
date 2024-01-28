@@ -37,6 +37,7 @@ jobs:
           echo "$PACKAGES"
           echo "$PACKAGES" | jq -c 'fromjson | .[]' | \
           while read -r package; do
+            echo "processing package $package"
             npm run build -w $package
             npm publish -w $package
           done
