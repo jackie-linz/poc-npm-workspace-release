@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.0](https://github.com/jackie-linz/poc-npm-workspace-release/compare/test1-v0.5.1...test1-v0.6.0) (2024-01-28)
+
+
+### Features
+
+* test1 with playwright and rollup ([3213d7c](https://github.com/jackie-linz/poc-npm-workspace-release/commit/3213d7c8c6aa9ce699368379891c1a6e08cf2cbe))
+
 ## [0.5.1](https://github.com/jackie-linz/poc-npm-workspace-release/compare/test1-v0.5.0...test1-v0.5.1) (2024-01-26)
 
 

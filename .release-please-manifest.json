@@ -1,5 +1,5 @@
 {
-  "packages/test1": "0.5.1",
+  "packages/test1": "0.6.0",
   "packages/test2": "0.3.0",
-  "packages/test3": "1.0.0"
+  "packages/test3": "1.1.0"
 }
