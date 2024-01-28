@@ -35,7 +35,7 @@ jobs:
       - run: npm ci
       - run: |
           echo "$PACKAGES"
-          echo "$PACKAGES" | jq -c 'fromjson | .[]' | \
+          echo "$PACKAGES" | jq -c -r 'fromjson | .[]' | \
           while read -r package; do
             echo "processing package $package"
             npm run build -w $package
