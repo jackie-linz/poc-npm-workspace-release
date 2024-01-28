@@ -35,6 +35,7 @@ jobs:
       - run: npm ci
       - run: |
           echo "$PACKAGES"
+          echo "$PACKAGES" | jq -c 'fromjson | .[]' | xargs npm run build -w
           echo "$PACKAGES" | jq -c 'fromjson | .[]' | xargs npm publish -w
         env:
           PACKAGES: ${{ toJSON(needs.release-please.outputs.paths_released) }}
